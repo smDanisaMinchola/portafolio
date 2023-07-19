@@ -1,0 +1,148 @@
+section{
+    margin-top: 1rem;
+    background-color: orange;
+    height: 97vh;
+  }
+  .contenido{
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: 5;
+
+  }
+  .presentacion {/*texto */
+    margin-top:20%;
+   text-align: center;
+  }
+  .letra1{
+    font-size: 3rem;
+    z-index: 6;
+  }
+  .letra2{
+    font-size: 2.8rem;
+  }
+
+  .letra3{
+    margin: 12px;
+    font-size: 1.2;
+  }
+
+  .letra3 {
+    color: hsla(0, 0%, 0%, 0.9);
+    font: normal 14px Varela Round, sans-serif;
+    height: 140px;
+    left: 0;
+    letter-spacing: 5px;
+    margin: -80px 0 0 0;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 100%;
+    width: 100%;
+  }
+
+.content-image{
+    width: 40%;
+    margin-top: 25%;
+    background-color: azure;
+  
+}
+
+.presentacion_img{
+   top:0;
+   margin-top: 13%;
+   margin-left: 100px;
+    width: 20rem;
+    height: 20rem;
+    padding: 12px;
+    border-radius: 50%;
+    z-index: 3;
+    position: absolute;
+}
+.overlay-icons{
+    top:0;
+    margin-top: 153px;
+    margin-left: 78px;  
+    width: 23rem;
+    height: 22rem;
+    border: 1px solid #000;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+}
+#canvas {
+    top: 0;
+	width: 100%;
+	height: 100%;
+  z-index: 4;
+  padding: 0;
+	margin: 0;
+    position: absolute;
+}
+@media (max-width: 768px) and (max-width: 720px) {
+  section{
+    height: 98vh;
+    position: absolute;
+    width: 100vw;
+  }
+  .contenido{
+    display: block;
+    justify-content:center;
+    position: relative;
+    top:0px;
+  }
+  .letra1{
+    font-size: 2.6rem;
+    z-index: 6;
+  }
+  .letra2{
+    font-size: 2.4rem;
+  }
+
+  .content-image{
+    width: 55%;
+    height: 93%;
+    margin-top: 5%;
+    background-color:transparent;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+  .presentacion_img{
+    display: flex;
+    margin-top: 0%;
+    margin-left:0;
+     width: 18rem;
+     height: 18rem;
+     padding: 1px;
+     justify-content: center;
+ }
+ .overlay-icons{
+  top:0;
+  margin-top: -3%;
+  margin-left: -10px;
+  margin-right: auto;  
+  width: 19rem;
+  height: 19rem;
+  border: 1px solid #000;
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+}
+.letra3 {
+
+  margin: -80px 0 0 0;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 100%;
+  width: 99%;
+}
+
+
+}

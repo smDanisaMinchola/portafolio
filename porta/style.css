@@ -1,0 +1,147 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main  */
+  body {
+    background: var(--bg-primary-color);
+    color: var(--text-primary-color);
+    font-family: "Proxima", sans-serif;
+  }
+
+.nav{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+position:fixed;
+width: 100%;
+background-color: #000000;
+height: 70px;
+top: 0;
+z-index: 100;
+
+}
+.list{
+  display: flex;
+  list-style: none;
+}
+.list_item{
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+
+}
+.nav_link{
+    padding: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color:  #fff;
+    
+}
+
+img{
+  width: 73px;
+}
+.logo{
+  margin: 2px;
+}
+.logo img {
+  display: block;
+  width: 80px;
+  
+}
+.hamburger {
+  display: none;
+}
+.bars{
+  width: 100px;
+  height: 24px;
+}
+.list_x{
+  display: flex;
+ justify-content: right;
+ padding:   20px;
+  
+}
+.x{
+  display: none;
+  width: 30px;
+ 
+}
+.nav-icon{
+  padding: 12px;
+}
+
+
+
+@media (max-width: 768px) and (max-width: 720px) {
+  .nav{
+display: hidden;
+justify-content: space-between;
+  }
+  .logo{
+    order:1;
+  }
+  .list{
+    position: fixed;
+    right: -100%;
+    top: 2px;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    text-align: right;
+    transition:   right 1s;
+    background-color:#c66a00;
+    border-radius: 16px 0 0 16px;
+    
+  }
+  .list_item:hover{
+    background-color: #6c6c6c4c;
+    border-radius: 16px;
+  }
+  .nav-link {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .list li:nth-child(2) {/*nth-child(2) srive par el orden */
+    margin-top: 3rem;
+  }
+  .nav-menu.active {
+    right: 0;
+  }
+  .list-item {
+    width: 100%;
+    border-bottom: 1px solid var(--other-color);
+  }
+.menu {
+  order: 2;
+}
+.nav-link {
+  display: inline-block;
+  width: 100%;
+}
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+}
+
+.x{
+  display: block;
+  cursor: pointer;
+}
+
+.mostrar{
+ right:0%;
+}
+
+}
