@@ -1,20 +1,119 @@
+
+
 section{
-    margin-top: 1rem;
-    background-color: orange;
-    height: 97vh;
+    margin-top: 4rem;
+     background-color: orange;
+    height: 89.9vh;
+    width: 100%;
+    position: absolute;
   }
   .contenido{
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    text-align: center;
     position: absolute;
+    top: 0rem;
     width: 100%;
-    height: 50%;
-    z-index: 5;
+    
+  }
+  .presentacion{
+    margin-top: 45px;
+    width: 100%;
+    z-index: 10;
+    position: relative;
 
   }
-  .presentacion {/*texto */
+  .letra1{
+   position: relative;
+  font-size: 2.6rem;
+  }
+  .letra2{
+    font-size: 2.4rem;
+  }
+  .letra3 {
+    margin-top: 2rem;
+    color: hsla(0, 0%, 0%, 0.9);
+    font: normal 14px Varela Round, sans-serif;
+    height: 240px;
+    left: 0;
+    letter-spacing: 5px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top:80%;
+    width: 100%;
+    z-index: 8;
+  }
+
+  #canvas {
+    top: 0;
+	width: 100%;
+	height: 100%;
+  z-index: 4;
+  padding: 0;
+	margin: 0;
+  position: absolute;
+}
+
+
+
+.content-image {
+  position: relative;
+  margin-top: 2%;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 6;
+}
+
+@keyframes rotacion-imagen{
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(-10deg);
+  }
+  100%{
+    transform: rotate(0deg);
+
+  }
+ 
+}
+.presentacion_img {
+  margin-top: 0.4rem;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  z-index: 3;
+  animation: rotacion-imagen 7s infinite;
+}
+
+.overlay-icons {
+  border: 1px solid #000;
+  width: 267px;
+  height: 267px;
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+
+  
+}
+
+
+
+  /* .overlay-icons {
+    width: 267px;
+    height: 267px;
+  } */
+
+
+   /*
+  .presentacion {
     margin-top:20%;
    text-align: center;
   }
@@ -147,28 +246,29 @@ section{
   }
 
   .content-image{
-    width: 300px;
-    height: 200px;
+    width: 80%;
+    height: 80%;
     margin-top: 35px;
     background-color:transparent;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-  
+    border-radius: 50%;
 }
   .presentacion_img{
+  background-color: blue;
     display: flex;
     margin-top: 0%;
     margin-left:0;
-     width: 18rem;
-     height: 18rem;
+     width: 19rem;
+     height:19rem;
      padding: 1px;
      justify-content: center;
  }
  .overlay-icons{
   top:0;
   margin-top: -9px;
-  margin-left: -10px;
+  margin-left: -3%;
   margin-right: auto;  
   width: 19rem;
   height: 19rem;
@@ -183,9 +283,9 @@ section{
   position: absolute;
   text-align: center;
   text-transform: uppercase;
-  top: 39rem;
+  top: 40rem;
   width: 99%;
 }
 
 
-}
+} */

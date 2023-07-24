@@ -19,7 +19,7 @@ let bNum   = 2;     // Number of bubbles created on movement (2)
 let bSize  = 8;     // Bubble size (8)
 let bSpeed = 3;     // Bubble speed (3)
 let bDep   = 0.01;  // Bubble depletion speed (0.01)
-let bDist  = 40;    // Mucus length (40)
+let bDist  = 34;    // Mucus length (40)
 
 /* --- Main Program: DO NOT EDIT BELOW --- */
 const canvas = document.getElementById("canvas");
